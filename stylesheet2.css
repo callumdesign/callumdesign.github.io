@@ -80,10 +80,6 @@ hr{
     color: #0077b5;}
 .fa-github-alt{
     color: #6e5494;}
-.fa:hover{
-    transition: all 0.3s;
-    transition-delay: 0.2s;
-    transform: scale(1.6);}
 .fa-tumblr-square{
     color: #35465c;}
 .fa-pinterest-square{
@@ -234,11 +230,11 @@ li:hover{
 }
 
 .colortext{
-    color: dodgerblue;
+    color: ;
 }
 
 .paragraph{
-    color: grey;
+    color: #EEEEEE;
     width: 100%!important;
     margin-top: 40px;
     font-size: 18px!important;
@@ -376,7 +372,7 @@ footer {
     text-align: center;}
 .btn{
     transition: 0.5s;
-    background: #3ec1bc!important;
+    background: #0f578a!important;
     width:12em!important;
 text-align: center;
     border: none!important;
@@ -391,7 +387,7 @@ text-align: center;
     width: 100%!important;
     padding: none;
     margin: none;
-    background-color: #65cdca;}
+    background-color: #3c6382;}
 .header-container{
     padding: none!important;
     margin: none!important;}
@@ -400,7 +396,7 @@ text-align: center;
 .navtext{
     font-family: Roboto;
     font-weight: 400!important;
-    color: #34495E!important;}
+    color: #96b5cf!important;}
 .navtext:hover{
     color: #89C4F4!important;
     transition: all 0.3s;
@@ -420,10 +416,10 @@ text-align: center;
     text-align: left;
     color: #EEEEEE;}
 .colortext{
-    color: #336E7B;
+    color: #b9cedf;
 }
 .navbar-brand{
-    color: #34495E!important;
+    color: #96b5cf!important;
     font-family: Montez;
     font-weight: 900!important;
     font-size: 36px!important;
@@ -440,10 +436,14 @@ text-align: center;
 
     width: 100%!important;
     margin: auto!important;
-    background-color: #d8f3f2!important;
+    background-color: #cbdae7!important;
 }
 
-
+.skills{
+    text-align: center;
+    font-family: Roboto!important;
+    font-weight: 900;
+}
 
 .contentbox{
     height: auto;
@@ -457,14 +457,72 @@ text-align: center;
       margin-bottom: 75px!important;
     width: 95%;
     margin: auto;
-    height: 400px;}
+    height: 250px;}
 .assetbox1{
-    background-color: #e55039;
+    margin: auto;
+    text-align: center;
+    background-color: #3fd97f/*#4cd137*/;
 }
 .assetbox2{
-    background-color: #78e08f;
+    margin: auto;
+    text-align: center;
+    background-color: #fcd569;
 }
 
 .assetbox3{
-    background-color: #4a69bd;
+    margin: auto;
+    text-align: center;
+    background-color: #ef7a5d;
+}
+
+
+
+
+
+
+
+
+
+.innerbox{
+
+    width: 95%;
+    margin-top: -75px;
+    height: 250px;}
+.innerbox1{
+        background-color: #1d954f;}
+.innerbox2{
+    background-color: #fbc737;}
+.innerbox3{
+    background-color: #d13a15;}
+.assethead{
+    margin-top: 50px;
+    color: #EEEEEE!important;
+    font-size: 26px;
+    font-family: Lato;
+    font-weight:700;
+}
+.assettext{
+    margin-top: 40px;
+    color: #EEEEEE!important;
+    font-size: 18px;
+    font-family: Lato;
+    font-weight:100;
+}
+.fa-pencil{
+    width: auto;
+    margin: auto;
+    margin-top: 25px;
+    color: #EEEEEE;
+    text-align: center!important;
+    font-size: 180px!important;}
+.fa-desktop{
+    margin-top: 25px;
+        color: #EEEEEE;
+    text-align: center!important;
+    font-size: 180px!important;}
+.fa-html5{
+    margin-top: 25px;
+        color: #EEEEEE;
+    text-align: center!important;
+    font-size: 180px!important;
 }
