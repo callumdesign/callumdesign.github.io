@@ -548,83 +548,180 @@ padding-top: 60px!important;}
 
 
 
-.picbox{
-    margin: auto;
-    max-width: 100%;
-    width: 100%;}
-.portfoliopic{
-    padding: 20px;
-    margin: auto;
-    width: auto;}
-.portfoliotext{
-    color: #EEEEEE!important;
-    font-weight:100;
-    font-family: "Lato";
-    font-size: 14px;
-    margin-top: 30px;
-    padding: 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bigbox{
+    box-shadow: 10px 10px 60px #b4cefd;
+    width: 100%;
+    height: 400px;
+    background-color: #6a9dfb;}
+.topbox{
+    width: 100%;
+    height: auto;
+    background-color: #518cfb;}
+.bigbox2{
+    box-shadow: 10px 10px 40px #beda71;
+    width: 100%;
+    height: auto;
+    background-color: #92b62f;}
+.topbox2{
+    width: 100%;
+    height: auto;
+    background-color: #a3cb34;}
 .portfoliohead{
-    padding: 20px;
-        margin-top: 50px;
+    padding: 25px;
     color: #EEEEEE!important;
-    font-size: 34px;
+    font-size: 26px;
     font-family: Lato;
     font-weight:700;}
-.portfolio-wrap{
-    margin-top: 50px;
-    height: auto;
-    width: auto;}
+.portfoliotext{
+    padding: 25px;
+    color: #EEEEEE!important;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight:100;}
 
+.picco{
+    width: 100%!important;
+    margin-top: 45px;}
 
-.mid2{
-    background-color: #778beb;}
-
-
-.contentwrap{
-    margin-top: 2pc;
-    background-color: transparent;
-    height: 400px!important;
-    max-height: 400px!important;
-    overflow:hidden;}
-.colorboxtop{
-    width: auto;
-    height: auto;
-    background-color: #30bccf;}
-.colorboxbottom{
-    height: auto;
-    background-color: #63cdda;
+.fitpic{
+    margin: auto;
     width: 100%;}
-.colorboxtop2{
-    width: auto;
-    height: auto;
-    background-color: #00b33c;}
-.colorboxbottom2{
-    height: 400px;
-    background-color: #00cc44;
-    width: 100%;}
+.carousel-control.left, .carousel-control.right {
+    background-image: none!important;}
 
+.right{
+    color: #96b5cf!important;}
+.left{
+    color: #96b5cf!important;}
 
+.each{
+    margin-top: 5em;}
 
-
-
-
-
-
-
-
-
+.no-mobile{
+    display: block;
+}
 .mobile{
     display: none;
 }
 
-@media screen and (max-width: 767px){
-    
-    
+
+
+
+
+
+
+
+
+
+
+/**testytesty**/
+
+
+.carousel-control{
+    transition: all 0.5s;
+    position: absolute!important;
+    text-shadow: none!important;
+}
+
+.carousel-control:hover{
+    transition: all 0.5s;
+    color: #518cfb!important;
+}
+.portfoliotext{
+padding-bottom: 75px;}
+
+.item{
+    padding: 0px!important;
+}
+
+/** **/
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1685px){
+    .picco{
+        margin-top: 0!important;
+    }
+    .fitpic{
+        height: 300px!important;
+        width: auto;}}
+
+
+@media screen and (max-width: 1080px){
     .no-mobile{
         display: none!important;}
     .mobile{
         display: block!important;
     }
+
+
+@media screen and (max-width: 767px){
+    
     .carousel-inner{
         max-width: 100%!important;
         border: 0px!important;
@@ -641,4 +738,5 @@ padding-top: 60px!important;}
     .mid{
         padding-top: 50px;
         margin-top: -50px!important;}
+
     }
