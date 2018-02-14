@@ -674,22 +674,32 @@ padding-top: 60px!important;}
 
 /**testytesty**/
 
+.indicator1{
+    margin-top: 60px;
+}
 
+.indicator2{
+    margin-top: 60px!important;
+}
+.indicator3{
+    margin-top: 90px!important;
+}
 .carousel-control{
     transition: all 0.5s;
     position: absolute!important;
-    text-shadow: none!important;
-}
+    text-shadow: none!important;}
 
 .carousel-control:hover{
     transition: all 0.5s;
-    color: #518cfb!important;
-}
+    color: #518cfb!important;}
 .portfoliotext{
 padding-bottom: 75px;}
 
 .item{
-    padding: 0px!important;
+    padding: 0px!important;}
+
+.fitpic{
+    
 }
 
 /** **/
@@ -721,6 +731,11 @@ padding-bottom: 75px;}
 
 
 @media screen and (max-width: 767px){
+    
+    .indicator{
+        transform: scale(2);
+        margin-top: 125px;
+    }
     
     .carousel-inner{
         max-width: 100%!important;
