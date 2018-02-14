@@ -1,24 +1,75 @@
 @microblue: #518cfb;
 @microbluepale: #6a9dfb;
-@cradlegreen: #49c936;
-@cradlegreenpale: #6ed45e;
-
+@cradlegreen: #a3cb34;
+@cradlegreenpale: #acd049;
+@quickfold: #f9ca24;
+@quickfoldpale: #fbd651;
+@toppo: #1289A7;
+@mid:  #d1f2fa;
+@btn-darken: 15%;
+@left-right-darken: 15%;
 
 ol.carousel-indicators li.active {
   background: @microblue!important;
     opacity: 0.8!important;
-    border: none!important;
-}
+    border: none!important;}
 ol.carousel-indicators li{
-    border-color: @microbluepale!important;
-}
-
-
+    border-color: @microbluepale!important;}
 ol.carousel-indicators2 li.active {
   background: @cradlegreen!important;
     opacity: 0.8!important;
-    border: none!important;
-}
+    border: none!important;}
 ol.carousel-indicators2 li{
-    border-color: @cradlegreenpale!important;
+    border-color: @cradlegreenpale!important;}
+ol.carousel-indicators3 li.active {
+  background: @quickfoldpale!important;
+    opacity: 0.8!important;
+    border: none!important;}
+ol.carousel-indicators3 li{
+    border-color: @quickfold!important;}
+.topbox{
+    background-color: @microblue;}
+.bigbox{
+    background-color: @microbluepale;}
+.topbox2{
+    background-color: @cradlegreen;}
+.bigbox2{
+    background-color: @cradlegreenpale;}
+.topbox3{
+    background-color: @quickfold;}
+.bigbox3{
+    background-color: @quickfoldpale;}
+.left2, .right2{
+    color: darken(@cradlegreen, @left-right-darken);
+    text-shadow: none;}
+.left1, .right1{
+    color: darken(@microblue, @left-right-darken);
+    text-shadow: none;}
+.left1:hover, .right1:hover{
+    color: @microblue;
+    transition: all 0.5s;
+    opacity: 0.4;}
+.left2:hover, .right2:hover{
+    color: @cradlegreen!important;
+    transition: all 0.5s;
+    opacity: 0.4;}
+.left3, .right3{
+    color: darken(@quickfold, @left-right-darken);
+    text-shadow: none;}
+.left3:hover, .right3:hover{
+    color: @quickfold!important;
+    transition: all 0.5s;
+    opacity: 0.4;}
+.toppo{
+    background-color: @toppo;}
+.mid{
+    background-color: @mid;}
+.footer{
+    background-color: @mid;}
+
+.linky{
+    color: #d1f2fa;
+    text-shadow: 3px 3px 5px #0c5f73;
 }
+
+
