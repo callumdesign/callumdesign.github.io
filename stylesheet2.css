@@ -725,6 +725,10 @@ padding-bottom: 75px;}
 
 @media screen and (max-width: 767px){
     
+    .bigbox, .bigbox2, .bigbox3{
+    width: 100%;
+    height: auto;}
+    
     .indicator{
         transform: scale(2);
         margin-top: 125px;
