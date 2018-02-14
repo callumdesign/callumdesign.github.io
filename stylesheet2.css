@@ -483,7 +483,7 @@ text-align: center;
     margin-top: 25px;
     color: #EEEEEE;
     text-align: center!important;
-    font-size: 170px!important;}
+    font-size: 210px!important;}
 .fa-desktop{
     text-shadow: 6px 6px 5px #fac01e;
     transition: 0.3s;
@@ -724,6 +724,13 @@ padding-bottom: 75px;}
 
 
 @media screen and (max-width: 767px){
+    
+    .heading, .subheading{
+        padding-left: 25px!important;
+        padding-right: 25px!important;}
+    .heading{
+        font-size: 5em!important;
+    }
     
     .bigbox, .bigbox2, .bigbox3{
     width: 100%;
