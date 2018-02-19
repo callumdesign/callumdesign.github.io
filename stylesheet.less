@@ -1,0 +1,132 @@
+@navbar-color: #54a0ff;
+@white-text: #EEEEEE;
+@darken1: 10%;
+@darken2: 3%;
+@lighten1: 3%;
+@top: #ee5253;
+@mid-one: #1a1a1a;
+
+/**nav bar styling**/
+.navbar{
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+    border-radius: 0!important;
+    border: 0!important;
+    height: 5vh!important;
+    background-color: darken(@top, @darken2)!important;
+    margin-bottom: 0!important;}
+.icon-bar{
+    color: @white-text!important;}
+.navbar-brand, .nav-text{
+    font-size: 14px;
+    text-decoration-color: @white-text!important;
+    color: @white-text!important;}
+.navbar-brand:hover, .nav-text:hover{
+    color: darken(@white-text, @darken1)!important;}
+.fa-facebook-square, .fa-envelope-square, .fa-phone-square{
+    color: @white-text;
+    font-size: 22px!important;}
+.fa-facebook-square:hover, .fa-envelope-square:hover, .fa-phone-square:hover{
+    transform: scale(1.3);}
+//**end of navbar styling**/
+
+
+
+
+//**top section styling**/
+.top{
+    width: 100%;
+    height: 100vh!important;
+    background-color: @top;
+    background-image: -webkit-linear-gradient(150deg, @top 51%, #ff6b6b 35%);}
+.heading{
+    margin-top: 1em;
+    text-align: center;
+    font-weight: 900!important;
+    color: @white-text;
+    font-size: 6em;
+    font-family: "Roboto";}
+.subheading{
+    text-align: center;
+    color: @white-text;
+    font-family: "Roboto";
+    font-size: 1.6em;}
+.button{
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+    text-align: center;
+    width:100%;
+    margin-left: auto;
+    margin-left: auto;}
+.btn{
+    width: 10em!important;
+    border-radius: 15px!important;
+    background-color: darken(@top, @darken2)!important;
+    border: none!important;}
+.btn:hover{
+    background-color: lighten(@top, @lighten1)!important;}
+.paragraph{
+    font-family: "Roboto";
+    color: @white-text;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 3em;
+    text-align: left;}
+//** end of top section**//
+
+
+
+//**mid-one section styling **//
+
+.mid-one{
+    margin: auto!important;
+    width: 100%;
+    height: 100vh;
+    background-color: @mid-one;}
+.carousel{
+    margin: auto!important;
+    width: 100%!important;
+    display: block;}
+.carousel-control{
+    background-image: none!important;}
+.portfoliotext{
+    color: @white-text;
+    text-align: center;
+    margin-left: 9em!important;
+    margin-right: 9em!important;}
+.glyphicon-chevron-right, .glyphicon-chevron-left{
+    font-size: 1.2em!important;}
+
+.section{
+    height: 100vh!important;}
+//**end mid-one**/
+
+
+//**mid-two styling**//
+.mid-two{
+    margin: auto!important;
+    width: 100%;
+    height: 100vh;
+    background-size: 80vw;
+    background-repeat: no-repeat;
+    background-image: url(https://i.imgur.com/WB8MHbB.png)}
+.slide{
+    width: 100vw;
+    height: 100vh;}
+.bigtext{
+    font-size: 3em;
+    margin-top: -40vh;
+    text-align: center;
+    font-weight: 900!important;
+    color: @white-text;
+    font-family: "Roboto";}
+.medtext{
+    font-size: 1em;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    margin-top: 0vh;
+    text-align: center;
+    font-weight: 400!important;
+    color: @white-text;
+    font-family: "Roboto";
+}
