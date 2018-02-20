@@ -41,7 +41,7 @@
   color: #e8724a;
 }
 .nav-active {
-  height: 8vh;
+  height: 8vh!important;
   background-color: #e8724a !important;
 }
 .top {
@@ -63,21 +63,22 @@
   font-family: "Roboto";
   font-size: 1.6em;
 }
-.button {
-  margin-top: 1em;
-  margin-bottom: 2.5em;
-  text-align: center;
-  width: 100%;
-  margin-left: auto;
+.pencil {
+  float: left;
+  margin-left: 120px;
+  margin-top: -200px !important;
+  height: 50vh;
+  margin-top: -10vh;
 }
-.btn {
-  width: 10em!important;
-  border-radius: 15px!important;
-  background-color: #3e9eff !important;
-  border: none!important;
+.pencil-png,
+.fineliner-png {
+  position: relative;
+  display: block;
+  height: 70vh;
 }
-.btn:hover {
-  background-color: #5caeff !important;
+.fineliner {
+  margin-top: -200px !important;
+  float: right;
 }
 .mid-one {
   text-align: center;
