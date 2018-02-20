@@ -191,13 +191,13 @@
     transform: rotate(-4deg);
   }
   .fineliner2 {
-    margin-left: 9vw!important;
+    margin-left: 3vw!important;
     margin-top: 7vh!important;
     transform: rotate(1deg);
   }
   .fineliner3 {
     margin-top: 8vh!important;
-    transform: rotate(-3deg);
+    transform: rotate(5deg);
   }
   .fineliner-bottom-png {
     margin-bottom: 5vh;
