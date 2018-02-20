@@ -8,6 +8,11 @@
 @mid-one: #1a1a1a;
 
 /**nav bar styling**/
+.the-top{
+    width: 100%;
+    height: auto;
+    background-color: @top;
+}
 .navbar, {
   z-index: 100;
   display: block;
@@ -54,20 +59,7 @@
     margin-top: 2vw;
     height: auto;
     background-color: none;
-    
     width:100%;}
-.heading{
-    margin-top: 1em;
-    text-align: center;
-    font-weight: 900!important;
-    color: @white-text;
-    font-size: 6em;
-    font-family: "Roboto";}
-.subheading{
-    text-align: center;
-    color: @white-text;
-    font-family: "Roboto";
-    font-size: 1.6em;}
 .pencil-png{
     transform: rotate(-2deg);
     margin-left: 8vw;
@@ -159,3 +151,51 @@
     font-weight: 400!important;
     color: @white-text;
     font-family: "Roboto";}
+
+
+
+
+
+
+
+
+
+
+/**media query**/
+@media only screen and (max-width: 767px) {
+   .pens{
+    width: 100%;
+    margin-top: 2vw;
+    height: auto;
+    background-color: none;
+    width:100%;}
+.pencil-png{
+    transform: rotate(-2deg);
+    margin-left: 8vw;
+    display: block;
+    width: 95vw;
+    margin-top: 5vh;}
+.fineliner-group{
+    margin-top: 7vh;}
+.fineliner{
+    margin-left: 1vw;
+    width: 100%;
+    margin-top: 0px!important;}
+    .fineliner-png, .fineliner-bottom-png{
+    margin-top: -4vh;
+    display: block;
+    width: 100vw;}
+.fineliner1{
+    margin-top: 6vh;
+    transform: rotate(3deg);}
+.fineliner2{
+    margin-left: 9vw!important;
+    margin-top: 7vh!important;
+    transform: rotate(-2deg);}
+.fineliner3{
+    margin-top: 8vh!important;
+    transform: rotate(-1deg);}
+
+.fineliner-bottom-png{
+    margin-bottom: 5vh;}
+}
