@@ -80,6 +80,20 @@
   margin-top: -200px !important;
   float: right;
 }
+.mobile {
+  width: 100vw;
+}
+.fineliner-mobile-png {
+  position: relative;
+  display: block;
+  width: 80vw;
+  margin: auto;
+  margin-right: 120px!important;
+}
+.pencil-mobile-png {
+  width: 60vw;
+  display: block;
+}
 .mid-one {
   text-align: center;
   margin: auto!important;
