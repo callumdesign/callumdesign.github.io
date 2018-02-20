@@ -49,6 +49,12 @@
   height: 100vh!important;
   background-color: #4da6ff;
 }
+.pens {
+  margin-top: 2vw;
+  height: auto;
+  background-color: none;
+  width: 100%;
+}
 .heading {
   margin-top: 1em;
   text-align: center;
@@ -63,36 +69,41 @@
   font-family: "Roboto";
   font-size: 1.6em;
 }
-.pencil {
-  float: left;
-  margin-left: 120px;
-  margin-top: -200px !important;
-  height: 50vh;
-  margin-top: -10vh;
-}
-.pencil-png,
-.fineliner-png {
-  position: relative;
+.pencil-png {
+  transform: rotate(-2deg);
+  margin-left: 8vw;
   display: block;
-  height: 70vh;
+  width: 55vw;
+  margin-top: 5vh;
+}
+.fineliner-group {
+  margin-top: 7vh;
 }
 .fineliner {
-  margin-top: -200px !important;
-  float: right;
+  margin-left: 14vw;
+  width: 100%;
+  margin-top: 0px!important;
 }
-.mobile {
-  width: 100vw;
+.fineliner1 {
+  margin-top: 3vh;
+  transform: rotate(3deg);
 }
-.fineliner-mobile-png {
-  position: relative;
+.fineliner2 {
+  margin-left: 7vw!important;
+  margin-top: 4vh!important;
+  transform: rotate(-2deg);
+}
+.fineliner3 {
+  transform: rotate(-1deg);
+}
+.fineliner-png,
+.fineliner-bottom-png {
+  margin-top: -4vh;
   display: block;
-  width: 80vw;
-  margin: auto;
-  margin-right: 120px!important;
-}
-.pencil-mobile-png {
   width: 60vw;
-  display: block;
+}
+.fineliner-bottom-png {
+  margin-bottom: 5vh;
 }
 .mid-one {
   text-align: center;
