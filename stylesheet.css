@@ -165,7 +165,8 @@ body {
   text-align: center;
 }
 .slide1,
-slide2 {
+.slide2,
+.slide3 {
   margin-top: -10vh;
 }
 .portfoliotext {
