@@ -180,7 +180,7 @@ body {
 .usb-png {
   transition: all 0.2s;
   padding: 1vw;
-  margin-left: -2vw;
+  margin-left: -4vw;
   margin-top: 40vh;
   height: 40vh;
   transform: rotate(82deg);
@@ -279,9 +279,16 @@ body {
   .fineliner-bottom-png {
     margin-bottom: 5vh;
   }
+  .usb-container {
+    width: auto;
+    height: auto;
+    margin-top: 14vh!important;
+  }
   .usb-png {
-    margin-top: 45vh!important;
-    height: 45vw!important;
+    margin-left: -8vw;
+    margin-top: 90vw;
+    position: absolute;
+    height: 40vw;
   }
   .paragraph {
     font-family: "Roboto";
