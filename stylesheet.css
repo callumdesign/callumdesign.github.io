@@ -164,9 +164,6 @@ body {
   padding-right: 20vw;
   text-align: center;
 }
-.slide1 {
-  margin-top: -25vh;
-}
 .portfoliotext {
   color: #eeeeee;
   text-align: center;
@@ -291,6 +288,7 @@ body {
     height: 40vw;
   }
   .paragraph {
+    margin-top: -40vh;
     font-family: "Roboto";
     color: #eeeeee;
     padding-left: 14vw!important;
