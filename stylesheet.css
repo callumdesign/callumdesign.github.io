@@ -221,7 +221,16 @@ body {
 /**media query**/
 @media only screen and (max-width: 768px) {
   .icons-right {
-    margin-right: 8vw;
+    margin-right: 10vw;
+  }
+  .fa-facebook-square,
+  .fa-envelope-square,
+  .fa-phone-square,
+  .fa-github-alt,
+  .fa-instagram,
+  .fa-tumblr {
+    padding: 0.2em;
+    font-size: 5em!important;
   }
   .pens {
     margin-top: 12vw;
