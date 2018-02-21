@@ -279,4 +279,11 @@ body {
   .fineliner-bottom-png {
     margin-bottom: 5vh;
   }
+  .paragraph {
+    font-family: "Roboto";
+    color: #eeeeee;
+    padding-left: 10vw!important;
+    padding-right: 10vw!important;
+    text-align: center;
+  }
 }
