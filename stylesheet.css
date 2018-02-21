@@ -220,6 +220,9 @@ body {
 /**end of mid-2 styling**/
 /**media query**/
 @media only screen and (max-width: 768px) {
+  .icons-right {
+    margin-right: 4vw;
+  }
   .pens {
     margin-top: 12vw;
     height: auto;
@@ -228,13 +231,13 @@ body {
   }
   .pencil-png {
     transform: rotate(-3deg);
-    margin-left: -12vw;
+    margin-left: -14vw;
     display: block;
     width: 95vw;
     margin-top: 5vh;
   }
   .fineliner-group {
-    margin-left: -19vw;
+    margin-left: -22vw;
     margin-top: 7vh;
   }
   .fineliner {
