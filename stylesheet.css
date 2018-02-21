@@ -279,11 +279,14 @@ body {
   .fineliner-bottom-png {
     margin-bottom: 5vh;
   }
+  .usb-png {
+    width: 25vw!important;
+  }
   .paragraph {
     font-family: "Roboto";
     color: #eeeeee;
-    padding-left: 10vw!important;
-    padding-right: 10vw!important;
+    padding-left: 14vw!important;
+    padding-right: 14vw!important;
     text-align: center;
   }
 }
