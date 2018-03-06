@@ -303,11 +303,12 @@ body {
     height: 40vw;
   }
   .heading2 {
+    padding-top: 15vh!important;
     font-size: 3em!important;
   }
   .paragraph {
     font-size: 1.2em!important;
-    margin-top: -40vh;
+    margin-top: -30vh;
     font-family: "Roboto";
     color: #eeeeee;
     padding-left: 5vw!important;
