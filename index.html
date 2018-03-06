@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Josefin+Sans|Lato:400,700,900|Pacifico|Montez" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Josefin+Sans|Lato:400,700,900|Pacifico|Montez|Baloo" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://use.fontawesome.com/e18319a99b.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -40,13 +40,9 @@
   </div>
 </nav><!--navbar--
     </div>  -->
-  <div id="wrapper"> <!-- everything inside fullpage.js-->
-      
-    <div class="section" id="about"><!-- top section-->
-
-      <div class="container-fluid top">
-        <div class="row">
-          <div class="top-icons">
+    
+    
+              <div class="top-icons">
           <ul>
             <li><a href="https://m.facebook.com/messages/compose?ids=100018916020315" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
             <li><a href="mailto:callum.penman@outlook.com"><span class="fa fa-envelope-square"></span></a></li>
@@ -58,6 +54,12 @@
             </div>
           </ul>
         </div>
+  <div id="wrapper"> <!-- everything inside fullpage.js-->
+      
+    <div class="section" id="about"><!-- top section-->
+
+      <div class="container-fluid top">
+        <div class="row">
           <div class="col-md-12 pens">
 
             <div class="fineliner">
@@ -88,12 +90,7 @@
     <div class="container-fluid mid-one section"><!--mid-one section-->
       <div class="row">
         <div class="col-md-12"> 
-          <h2 class="heading2">About Me</h2>
-            <div class="usb-container">
-          <a href="Callum%20Penman%20-%20Resume.pdf" target="_blank" id="link-resume">
-            <img src="usb.png" class="usb-png">
-          </a>
-            </div>
+          <h2 class="heading2 title">About Me</h2>
           <div class="slide slide1">
             <p class="paragraph">I studied at Victoria University, and completed a bachelor of design innovation majoring in industrial design in 2017. I have had three years of experience using CAD packages such as Solidworks and Rhinoceros to design for additive manufacturing technologies as well as other CNC machining techniques. </p> 
             </div>
@@ -109,16 +106,20 @@
       
     <div class="container-fluid mid-two section"><!--mid-two section-->
       <div class="row">
-        <h2 class="bigtext">Micro, Charge on the go!</h2>
-        <div class="slide slide1 col-md-12"> 
-          <h2 class="medtext">This project was completed in cooperation with Micro Mobility and Victoria University of Wellington. The purpose of the project was to design & complimentary charging service for Micro customers. The service aims to provide Micro customers with an appealing and convenient method of charging electric scooters in order to encourage their widespread use. By doing so, Micro Charge on the Go builds on Micro Mobility's "world first" branding value to reinforce the idea that electric scooters are a useful and convenient urban transport option.</h2>
+        <h2 class="heading2">Projects</h2>
+        <div class="slide"> 
+        <div class="col-md-4">
+        <img class="micrologo" src="https://i.imgur.com/i8pgi3k.png">
         </div>
-                    <div class="usb">
-              <img src="usb.png" class="usb-png">    
-          </div>
-        <div class="slide slide2 col-md-12">
-</div>
-        <div class="slide slide3 col-md-12">Three</div>
+        <div class="col-md-4">
+        <img class="micrologo" src="https://i.imgur.com/ruckq7s.png">
+        </div>
+        <div class="col-md-4">
+        <img class="micrologo" src="https://i.imgur.com/fyap2ZE.png">
+        <p>hello</p>
+        </div>
+        </div>
+
       </div>
     </div><!--end of mid-two section-->
   </div><!-- end of wrapper-->
@@ -130,6 +131,33 @@ $(document).ready(function(){
 	$('#wrapper').fullpage();
     
 });
+</script>
+<script>
+$(document).ready(function() {
+  $(".title").lettering();
+  $(".button").lettering();
+});
+
+
+
+
+
+$(document).ready(function() {
+  animation();
+}, 1000);
+
+
+
+function animation() {
+  var title1 = new TimelineMax();
+  title1.to(".button", 0, {visibility: 'hidden', opacity: 0})
+  title1.staggerFromTo(".title span", 0.5, 
+  {ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
+  {ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
+  title1.to(".button", 0.2, {visibility: 'visible' ,opacity: 1})
+}
+    
+    
 </script>
 
 </body>
