@@ -3,7 +3,8 @@
 @white-text: #EEEEEE;
 @darken1: 10%;
 @darken2: 3%;
-@darken3: 25%;
+@darken3: 16%;
+@darken4: 22%;
 @lighten1: 3%;
 @top: #4da6ff;
 @mid-one: #01a3a4;
@@ -207,16 +208,30 @@ body{
     margin: auto!important;
     width: 100%;
     height: 100vh;
-    background-color: white;}
+    background-color: @top;}
 .slide{
     width: 100vw;
     height: 100vh;}
-.micrologo{
-    width: 30vw;}
-.micrologo:hover{
-    transform: rotate(14deg);
-    transition: 0.5s;
-}
+.logo{
+    width: 100%;
+    text-align: center;
+    margin-top: -40vh;}
+.projectlogo{
+    margin-left: -7vw;
+    height: 55vh;}
+.qf{
+    margin-top: 8vh;
+    height: 48vh;}
+.project-text{
+    text-shadow: 2px 2px 1px darken(@top, @darken4);
+    margin-left: -10vw;
+    padding-right: 8vw;
+    margin-top: -26vh;
+    font-size: 1.4em;
+    font-family: "Roboto";
+    color: @white-text;}
+.heado{font-size: 1.8em;}
+
 /**end of mid-2 styling**/
 
 
