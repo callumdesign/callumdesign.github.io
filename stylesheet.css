@@ -340,9 +340,11 @@ body {
     width: auto;
   }
   .micro {
+    margin-top: 5vh;
     margin-left: 0vw;
   }
   .project-text {
+    text-align: center;
     margin-top: 4vh;
     margin-left: 0;
     font-size: 1em;
