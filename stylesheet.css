@@ -334,6 +334,7 @@ body {
     text-align: center;
   }
   .projectlogo {
+    margin-left: 0vw!important;
     z-index: 150!important;
     margin-top: 20vh!important;
     height: 30vh;
@@ -341,6 +342,9 @@ body {
   }
   .micro {
     margin-left: 0vw;
+  }
+  .cradle {
+    margin-top: -5vh !important;
   }
   .heado {
     font-size: 1.5em;
