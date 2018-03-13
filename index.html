@@ -1,47 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <title>Callum Penman</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+     <link rel="stylesheet" href="stylesheet.css" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Josefin+Sans|Lato:400,700,900|Pacifico|Montez|Baloo" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://use.fontawesome.com/e18319a99b.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="stylesheet.less">
-  <script src="jquery.fullPage.js"></script>
-  <link rel="stylesheet" href="jquery.fullPage.css">
+  <script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
+  <link rel="stylesheet" type="text/css" href="../jquery.pagepiling.css" />
+  <link rel="stylesheet" type="text/css" href="examples.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <!-- example from https://github.com/alvarotrigo/pagePiling.js#pagepilingjs -->
+  <script type="text/javascript" src="../jquery.pagepiling.min.js"></script>
+  <script type="text/javascript">
+		var deleteLog = false;
+		$(document).ready(function() {
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3'],
+			    loopTop: true,
+			    loopBottom: true
+			});
+	    });
+    </script>
 </head>
-<body>    
-    <!--comment out nav bar
-<div class="the-top">
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span> 
-        </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="nav-active"><a href="#"><p class="nav-text">Home</p></a></li>
-          <li><a href="#about"><p class="nav-text">Blog</p></a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
-        <li><a href="#"><span class="fa fa-envelope-square"></span></a></li>
-        <li><a href="#"><span class="fa fa-phone-square"></span></a></li>
-      </ul>
-    </div>
-  </div>
-</nav><!--navbar--
-    </div>  -->
-    
-    
+<body>
   <div class="top-icons">
     <ul>
       <li><a href="https://m.facebook.com/messages/compose?ids=100018916020315" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
@@ -54,11 +40,9 @@
         </div>
     </ul>
   </div><!-- icon navbar-->
-  <div id="wrapper"> <!-- everything inside fullpage.js-->
-    <div class="section" id="about"><!-- top section-->
-      <div class="container-fluid top">
-        <div class="row">
-          <div class="col-md-12 pens">
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+                <div class="col-md-12 pens">
             <div class="fineliner">
               <img src="pencil.png" class="pencil-png"> 
             </div>
@@ -73,64 +57,23 @@
                 <img src="fineliner3.png" class="fineliner-bottom-png fineliner3">
               </div>
             </div>                         
-            <div class="arrow bounce">
-              <span class="fa fa-arrow-down fa-2x"></span>
-            </div>
           </div> 
-        </div> 
-      </div>
-    </div><!--end of top section-->
-    <div class="container-fluid mid-one section"><!--mid-one section-->
-      <div class="row">
-        <div class="col-md-12"> 
-          <h2 class="heading2">About Me</h2>
-          <div class="slide slide1">
-            <p class="paragraph">I studied at Victoria University, and completed a bachelor of design innovation majoring in industrial design in 2017. I have had three years of experience using CAD packages such as Solidworks and Rhinoceros to design for additive manufacturing technologies as well as other CNC machining techniques. </p> 
-            </div>
-          <div class="slide slide2">
-            <p class="paragraph">Some practical attributes I have include hands on experience operating consumer level 3D printers such as the UP! Box FDM machines, as well as designing parts to be made on printers such as the Stratasys J750 and Connex printers. I also have experience using rendering software such as Keyshot, to produce images and animations of prototypes to demonstrate features of a design.</p> 
-          </div>
-          <div class="slide slide3">
-            <p class="paragraph">As a side interest and a hobby, I am interested in front end web design and development. I have had around 6 months of experience using HTML, CSS + LESS & Bootstrap, as well as jQuery. Currently my main interest in this field is responsive web design, and learning to create unique user experiences which work on computers and mobile devices. I have used Adobe Illustrator & Photoshop to create simple flat UI style vector graphics and glyphs for websites.</p> 
-          </div>
-        </div>
-      </div>
-    </div><!--end of mid-one section-->
-    <div class="container-fluid mid-two section"><!--mid-two section-->
-      <div class="row">
-        <h2 class="heading2">Projects</h2>
-        <div class="slide">
+	    </div><!--end of section1-->
+	    <div class="section" id="section2">
           <div class="col-sm-6 logo">
-            <img class="projectlogo micro" src="https://i.imgur.com/i8pgi3k.png">
+                            <a href="Micro.html"><img class="city" src="https://i.imgur.com/YKMPDep.png"></a>
           </div>
-          <div class="col-sm-6">
-            <p class="project-text"><span class="heado">Micro Charge on the go.</span><br>This project involved identifying and designing around a brand value unique to Micro Mobility. The outcome was a conceptual recharge station which aims to boost scooter awareness and reinforce the notion that Micro scooters are a viable and convenient transport option in Wellington city.</p>    
+          <div class="col-sm-12"><h1 class="heading">Micro charge on the go!</h1>
+            <p class="project-text">This project involved identifying and designing around a brand value unique to Micro Mobility. The outcome was a conceptual recharge station which aims to boost scooter awareness and reinforce the notion that Micro scooters are a viable and convenient transport option in Wellington city.  <a href="Micro.html"> Check out all the details!</a></p>    
           </div>
-      </div><!--section one: Micro-->
-        <div class="slide"> 
-          <div class="col-sm-6 logo">
-            <img class="projectlogo qf" src="https://i.imgur.com/5NdVe7f.png">
-          </div>
-          <div class="col-sm-6">
-            <p class="project-text"><span class="heado">Quickfold Chair</span><br>The aim of this project has been to create a chair which embodies simplicity and pragmatic design philosophy. Initial influence for the chair came from English designer Jasper Morrison’s plywood chair and his simplistic vision towards design. The chair speaks about the most reduced, yet functional solution to public seating. </p>    
-          </div>
-      </div><!--section two: Quickfold-->
-        <div class="slide"> 
-          <div class="col-sm-6 logo">
-            <img class="projectlogo" src="https://i.imgur.com/P9XkYps.png">
-          </div>
-          <div class="col-sm-6">
-            <p class="project-text"><span class="heado">The Cradle</span><br>The purpose of the project was to create a tangible interaction around sleeping. The concept was based around the effects of binaural audio stimulation and its efficacy for encouraging relaxation. </p>    
-          </div>
-        </div><!--section three: Cradle-->
-      </div><!--end of row-->
-    </div><!--end of mid-two section-->
-  </div><!-- end of wrapper-->    
-  <script>
-    $(document).ready(function(){
-	$('#wrapper').fullpage();
-    });
-  </script><!-- initialise fullpage.js-->
+	    </div>
+	    <div class="section" id="section4">
+	    	<div class="intro">
+	    		<h1>Scroll Down</h1>
+				<p>And it will loop to the first section</p>
+	    	</div>
+	    </div>
+	</div>
 
 </body>
 </html>

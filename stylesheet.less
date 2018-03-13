@@ -1,56 +1,27 @@
 @navbar-color: #fffa65;
-@navbar-accent: #e8724a;
+@navbar-accent: #62809d;
 @white-text: #EEEEEE;
 @darken1: 10%;
 @darken2: 3%;
 @darken3: 16%;
 @darken4: 22%;
 @lighten1: 3%;
-@top: #4da6ff;
-@mid-one: #01a3a4;
+@section1-1: #97cec3;
+@section1-2: #cbe7e1;
+@section2-1: #feeeb3;
+@section2-2: #b3d9ff;
+@micro: #70a1ff;
+@microsection1-1: #cbe7e1;
+@microsection1-2: #ffffcc;
+@microsection2-1: white;
 
 
 
-body{
-    background-color: @top;
-    color: @top;}
+
 /**nav bar styling**/
-.the-top{
-    width: 100%;
-    height: auto;
-    background-color: @top;}
+
 .section{
     height: 100vh!important;}
-
-/** comment out navbar **
-.navbar{
-    z-index: 100;
-    display: block;
-    position: fixed;
-    top: 0;
-    width: 100%;}
-.navbar{
-    -webkit-border-radius: 0!important;
-    -moz-border-radius: 0!important;
-    border-radius: 0!important;
-    border: 0!important;
-    height: 8vh!important;
-    background-color: @navbar-color!important;
-    margin-bottom: 0!important;}
-.icon-bar{
-    color: @white-text!important;}
-.navbar-brand, .nav-text{
-    font-size: 14px;
-    text-decoration-color: @white-text!important;
-    color: @white-text!important;}
-.navbar-brand:hover, .nav-text:hover{
-    color: darken(@white-text, @darken1)!important;}
-.navbar-right{
-    margin-right: 5vw!important;}
-.nav-active{ 
-    height: 8vh!important;
-    background-color: @navbar-accent!important; }
-//**end of navbar styling**/
 
 .top-icons{
     z-index: 9999;
@@ -66,27 +37,28 @@ body{
     margin-top: 2vh!important;
     display: inline!important;}
 .fa{
-    text-shadow: 0px 3px 2px darken(@top, @darken1);
+    text-shadow: 0px 3px 2px @navbar-accent;
     transition: 0.3s;
     padding: 1vw;
     padding-top: 4vh;
     color: @white-text;
     font-size: 25px!important;}
 .fa:hover{
-    text-shadow: 0px 6px 6px darken(@top, @darken3);
+    text-shadow: 0px 6px 6px lighten(@navbar-accent, @darken3);
     transform: scale(1.2);
     transition: 0.3s;
     color: white;}
+.fa2:hover{
+    text-shadow: 0px 6px 6px darken(@white-text, @darken4);
+    color: lighten(lightgrey, @darken1);}
 
 
 
 
 
-//**top section styling**/
-.top{
-    width: 100%;
-    height: 100vh!important;
-    background-color: @top;}
+//**section1 styling**/
+#section1{
+    background: linear-gradient(to bottom, @section1-1, @section2-2);}
 .pens{
     width: 100%;
     height: auto;
@@ -119,25 +91,8 @@ body{
     width: 60vw;}
 .fineliner-bottom-png{
     margin-bottom: 5vh;}
-.arrow{
-    text-align: center;
-    margin: 0;
-    margin-top: 2vh;}
-.bounce {
-    -moz-animation: bounce 3s infinite;
-    -webkit-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;}
-.fa-arrow-down{
-    color: @white-text;
-    font-size: 8vh!important;}
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100%{
-    transform: translateY(0);}
-    40%{
-    transform: translateY(-4vh);}
-    60%{
-    transform: translateY(-2vh);}}
-//** end of top section**//
+
+//** end of section1**//
 
 
 
@@ -148,95 +103,119 @@ body{
 
 
 
-//**mid-one section styling **//
-.mid-one{
+//section2 styling **//
+#section2{
     margin-top: 0;
     text-align: center;
     width: 100%;
     height: 100vh!important;
-    background-color: @top;}
-.heading2{
-    text-shadow: -1px -1px 0px lighten(@top, @lighten1), 3px 3px 0px darken(@top, @darken1), 6px 6px 0px darken(@top, @darken3);
-    margin-top: 1em;
-    letter-spacing: 3px;
-    text-align: center;
-    color: @white-text;
-    font-size: 6em;
-    font-family: "Baloo";}
-.paragraph{
-    font-size: 1.4em;
-    font-family: "Roboto";
-    color: @white-text;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    text-align: center;}
-.slide1, .slide2, .slide3{
-    z-index: 10!important;
-    overflow: visible;
-    margin-top: -25vh;}
-.portfoliotext{
-    color: @white-text;
-    text-align: center;
-    margin-left: 9em!important;
-    margin-right: 9em!important;}
-#link-resume{
-     position: absolute;
-     z-index: 5;} 
-.usb-png{
-    transition: all 0.2s;
-    padding: 1vw;
-    margin-left: -4vw;
-    margin-top: 40vh;
-    height: 40vh;
-    transform: rotate(82deg);}
-.usb-png:hover{
-    transition: 0.2s;
-    transform: rotate(90deg);}
-
-//**end mid-one**/
-
-
-
-
-
-
-
-
-
-//**mid-two styling**//
-.mid-two{
-    margin: auto!important;
-    width: 100%;
-    height: 100vh;
-    background-color: @top;}
+    background: linear-gradient(to top, @section2-1, @section2-2);}
 .slide{
     width: 100vw;
     height: 100vh;}
 .logo{
     width: 100%;
     text-align: center;
-    margin-top: -40vh;}
-.projectlogo{
-    margin-left: -7vw;
-    height: 55vh;}
-.qf{
-    margin-top: 8vh;
-    height: 48vh;}
+    margin-top: -30vh;}
+.micro{
+    margin-top: 40vh;
+    margin-left: 1vw;
+    height: 45vh;}
+.city{
+    left: 0.3vw;
+    top: 25vh;
+    width: 98vw;
+    position: absolute;}
+.heading{
+    margin-top: -10vh;
+    font-family: Baloo;
+    font-size: 4em;
+    color: #737373;}
 .project-text{
-    text-shadow: 2px 2px 1px darken(@top, @darken4);
-    margin-left: -10vw;
-    padding-right: 8vw;
-    margin-top: -26vh;
-    font-size: 1.4em;
-    font-family: "Roboto";
-    color: @white-text;}
-.heado{font-size: 1.8em;}
-
-/**end of mid-2 styling**/
+    color: #4d4d4d;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-left: 24.5vw;
+    margin-right: 24.5vw;}
+/**end of section2**/
 
 
 
 
+
+/**micro.html styling**/
+.fa2{
+    text-shadow: none;
+    transition: 0.3s;
+    padding: 1vw;
+    padding-top: 4vh;
+    color: #1e90ff;
+    font-size: 25px!important;}
+.fa2:hover{
+    text-shadow: none;
+    transform: scale(1.2);
+    transition: 0.3s;
+    color: lighten(@micro, @darken1);}
+#microsection1{
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100vh!important;
+    background-color: white;}
+.micro1{
+    margin-top: 0;
+    width: 36vw;}
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: lightslategrey;
+    font-size: 0.9em;
+    font-family: Roboto!important;}
+
+
+
+#microsection2{
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100vh!important;
+    background-color: white;}
+
+#micro-text{
+    font-family: Lato;
+    color: grey;
+    margin-left: 26vw;
+    margin-right: 26vw;}
+#handshake{
+    width: 22vw;
+    margin-bottom: 6vh;
+}
+#brand{
+    margin-top: -12vh;
+    margin-left: 8vw;
+    width: 30vw;}
+#phones{
+    width: 35vw;
+    margin-bottom: 8vh;}
+
+
+
+
+
+#microsection3{
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100vh!important;
+    background-color: white;}
+
+#micropic{
+    width: 80vw;
+}
+#micropic2{
+    width: 60vw;
+}
 
 
 
@@ -247,12 +226,11 @@ body{
 @media only screen and (max-width: 768px){
 .icons-right{
     margin-right: -5vw!important;}
-    .fa-facebook-square, .fa-envelope-square, .fa-phone-square, .fa-github-alt, .fa-instagram, .fa-tumblr{
-        padding: 3vw;
-        font-size: 6vw!important;}
-    .top-icons{
-        margin-left: -8vw!important;}
-    
+.fa-facebook-square, .fa-envelope-square, .fa-phone-square, .fa-github-alt, .fa-instagram, .fa-tumblr{
+    padding: 3vw;
+    font-size: 6vw!important;}
+.top-icons{
+    margin-left: -8vw!important;} 
 .pens{
     width: 100%;
     margin-top: 12vw;
@@ -272,7 +250,7 @@ body{
     margin-left: -1vw;
     width: 100%;
     margin-top: 0px!important;}
-    .fineliner-png, .fineliner-bottom-png{
+.fineliner-png, .fineliner-bottom-png{
     margin-top: -4vh;
     display: block;
     width: 100vw;}
@@ -306,7 +284,6 @@ body{
     position: absolute;
     height: 40vw;}
 .heading2{
-
     padding-top: 5vh!important;
     font-size: 2.6em!important;}
 .paragraph{
@@ -324,22 +301,13 @@ body{
     height: 30vh;
     width: auto;}
 .micro{
-        margin-left: 0vw;}
-
-    
+    margin-left: 0vw;}
 .heado{
-        font-size: 1.5em;}
+    font-size: 1.5em;}
 .project-text{
-        text-shadow: none;
-        margin-left: 10vw!important;
-        margin-right: 0!important;
-        text-align: center;
-        margin-top: 3vh;
-        margin-left: 0;
-        font-size: 1em;
-        
-    }
-    
-
-
-}
+    text-shadow: none;
+    margin-left: 10vw!important;
+    margin-right: 0!important;
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 1em;}}
