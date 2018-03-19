@@ -2,33 +2,16 @@
 <html>
 
 <head>
-
-     <link rel="stylesheet" href="stylesheet.css" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="prototype.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Josefin+Sans|Lato:400,700,900|Pacifico|Montez|Baloo" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://use.fontawesome.com/e18319a99b.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="e"></script>
-  <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
-  <link rel="stylesheet" type="text/css" href="examples.css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <!-- example from https://github.com/alvarotrigo/pagePiling.js#pagepilingjs -->
-  <script type="text/javascript" src="jquery.pagepiling.min.js"></script>
-  <script type="text/javascript">
-		var deleteLog = false;
-		$(document).ready(function() {
-	    	$('#pagepiling').pagepiling({
-	    		menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3'],
-			    loopTop: true,
-			    loopBottom: true
-			});
-	    });
-    </script>
 </head>
 <body>
-  <div class="top-icons">
+    
+      <div class="top-icons">
     <ul>
       <li><a href="https://m.facebook.com/messages/compose?ids=100018916020315" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
       <li><a href="mailto:callum.penman@outlook.com"><span class="fa fa-envelope-square"></span></a></li>
@@ -40,40 +23,48 @@
         </div>
     </ul>
   </div><!-- icon navbar-->
-	<div id="pagepiling">
-	    <div class="section" id="section1">
-                <div class="col-md-12 pens">
-            <div class="fineliner">
-              <img src="pencil.png" class="pencil-png"> 
-            </div>
-            <div class="fineliner-group">
-              <div class="fineliner">
-                <img src="fineliner1.png" class="fineliner-png fineliner1"> 
-              </div>
-              <div class="fineliner">
-                <img src="fineliner2.png" class="fineliner-png fineliner2"> 
-              </div>
-              <div class="fineliner">
-                <img src="fineliner3.png" class="fineliner-bottom-png fineliner3">
-              </div>
-            </div>                         
-          </div> 
-	    </div><!--end of section1-->
-	    <div class="section" id="section2">
-          <div class="col-sm-6 logo">
-                            <a href="Micro.html"><img class="city" src="https://i.imgur.com/YKMPDep.png"></a>
-          </div>
-          <div class="col-sm-12"><h1 class="heading">Micro charge on the go!</h1>
-            <p class="project-text">This project involved identifying and designing around a brand value unique to Micro Mobility. The outcome was a conceptual recharge station which aims to boost scooter awareness and reinforce the notion that Micro scooters are a viable and convenient transport option in Wellington city.  <a href="Micro.html"> Check out all the details!</a></p>    
-          </div>
-	    </div>
-	    <div class="section" id="section4">
-	    	<div class="intro">
-	    		<h1>Scroll Down</h1>
-				<p>And it will loop to the first section</p>
-	    	</div>
-	    </div>
-	</div>
-
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-12 pens">
+    <div class="fineliner">
+      <img src="pencil.png" class="pencil-png"> 
+    </div>
+    <div class="fineliner-group">
+      <div class="fineliner">
+        <img src="fineliner1.png" class="fineliner-png fineliner1"> 
+      </div>
+      <div class="fineliner">
+        <img src="fineliner2.png" class="fineliner-png fineliner2"> 
+      </div>
+      <div class="fineliner">
+        <img src="fineliner3.png" class="fineliner-bottom-png fineliner3">
+      </div>
+    </div>                         
+  </div>
+      
+      
+  <div class="col-sm-12">
+    <h3 id="about">About me</h3>  
+  </div>
+  <div class="col-sm-6">
+    <h3 id="subtext">My experience in the field of design</h3>
+    <p class="paragraph paragraph1">I am a recent graduate with a bachelor of design innovation degree, majoring in industrial design. My strengths include CAD and CAM, and design for additive manufacturing. I am experienced in using Solidworks and Rhino to generate prototypes, and I can produce some stunning lifelike renders using Keyshot.</p>
+      
+     <p class="paragraph paragraph2">I am familiar with a plethora of design methods such as storyboarding and scenario building, persona building, rapid prototyping and parallel prototyping, cultural probes, academic research and evidence based design as well as hands on physical modelling and sketching.</p>  
+    
+    <p class="paragraph paragraph2">Beyond the realms of physical interactions and CAD, I also enjoy graphic design and illustration. Although I have not been formally taught, I have picked up some tips and techniques throughout my time and consider myself to be fairly proficient. I mainly produce logo and icon designs for websites. I am also experienced in typography. </p>
+      
+        <p class="paragraph paragraph2">As a side interest and major hobby, I'm also experienced in web design. I have had around 6 months experience using HTML + CSS (LESS) and jQuery. I have used a number of Bootstrap applications as well as jQuery plugins such as fullpage.js and pagepiling.js to create website prototypes. I built this website myself and it is iteration number 8! </p>
+  </div>
+  <div class="col-sm-6">
+  <img src="https://i.imgur.com/x9mDQrx.png" id="icon1">    
+  </div>
+  <div class="col-sm-6">
+    <img src="https://i.imgur.com/HIt0FLj.png" id="icon2">  
+  </div>
+  <div class="col-sm-6">
+    <img src="https://i.imgur.com/OUbgX3m.png" id="icon2">  
+  </div>
+</div>
+</div>
 </body>
-</html>
